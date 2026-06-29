@@ -23,6 +23,21 @@
 ;;
 ;;(setq doom-font (font-spec :family "Fira Code" :size 12 :weight 'semi-light)
 ;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
+; (setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 16)
+;       doom-variable-pitch-font (font-spec :family "Noto Sans" :size 16)
+;       doom-unicode-font (font-spec :family "Noto Sans CJK SC" :size 16))
+(setq doom-font (font-spec :family "JetBrainsMono Nerd Font"
+                           :size 16.0
+                           :weight 'medium
+                           :slant 'normal)
+      doom-big-font (font-spec :family "JetBrainsMono Nerd Font"
+                               :size 24.0
+                               :weight 'medium
+                               :slant 'normal)
+      doom-variable-pitch-font (font-spec :family "Noto Sans"
+                                          :size 16.0)
+      doom-unicode-font (font-spec :family "Noto Sans CJK SC"
+                                   :size 16.0))
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
@@ -89,7 +104,7 @@
    ("C-`" . 'rime-send-keybinding)    ;; <----
    ("M-j" . 'rime-force-enable))
   )
-(setq rime-user-data-dir "~/.config/ibus/rime")
+(setq rime-user-data-dir "~/.config/fcitx/rime")
 (setq rime-posframe-properties
       (list :background-color "#333333"
             :foreground-color "#dcdccc"
